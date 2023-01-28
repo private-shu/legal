@@ -1,0 +1,121 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    margin: 30px 50px 50px 50px;
+    }
+    
+h1 {
+    position: relative;
+    padding: 0.5em;
+    // background: rgb(12, 107, 114);
+    background: rgb(164, 118, 50);
+    color: white;
+  }
+
+h1::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+  }
+
+.middle {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.list-group ul.navbar-nav ul li a.active {
+    color: #d08047;
+    text-decoration: solid underline #d08047 2px;
+}
+
+.member-info-container-style {
+    border-radius: 10px;
+    // border: 1px dashed #6f6f6e;
+    background-color:rgb(163, 202, 219);
+}
+
+.agreement-info-container-style {
+    border-radius: 10px;
+    // border: 1px dashed #6f6f6e;
+    // background-color:rgb(18, 68, 112);
+}
+
+.contact-info-container-style {
+    border-radius: 10px;
+    background-color:rgb(234, 231, 181);
+}
+
+hr {
+    border-top: 1px dashed rgb(57, 55, 55);
+}
+
+.required::after {
+    content: "必須";
+    background-color: #d69233;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    min-width: 10px;
+    padding: 3px 7px;
+    margin: 0px 5px;
+    line-height: 1;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.toast-info {
+    background-color: #2f96b4;
+}
+
+.table-wrapper thead tr th {
+  position: -webkit-sticky; /* for Safari */
+  /* 縦スクロール時を固定 */
+  position: sticky;
+  top: 0;
+  /* tbody内のセルより手前に表示する */
+  z-index: 1;
+}
+.table-wrapper th:first-child {
+  /* 横スクロールを固定 */
+  position: sticky;
+  left: 0;
+  // background: #1d87a1;
+  background: #88598b;
+  border-right: 1px solid rgb(233, 230, 230);
+  width: 42px;
+}
+.table-wrapper thead th:first-child {
+  /* 一番左端のthead thが横スクロール時に隠れない様に */
+  z-index: 2;
+  background: #848888;
+  border-right: 1px solid rgb(233, 230, 230);
+}
+.table-wrapper th,
+.table-wrapper td{
+  border-collapse: collapse;
+  text-align: center;
+  padding: .2rem .5rem;
+  font-weight: normal;
+  border-right: 1px solid rgb(233, 230, 230);
+  border-bottom: 1px solid rgb(233, 230, 230);
+}
+.table-wrapper thead th {
+    // background: #b9932b;
+    background: #384869;
+    color: #E0E0E0;
+}
